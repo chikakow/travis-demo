@@ -5,9 +5,9 @@ dist: trusty
 sudo: required
 branches:
   only:
-  - master
+  - main
 before_script:
   - npm install -g @angular/cli
 script:
 - ng lint
-- ng build --prod --base-href https://chikakow.github.io/travis-demo/
+- ng build --configuration=production --base-href https://chikakow.github.io/travis-demo/
